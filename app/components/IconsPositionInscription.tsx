@@ -1,8 +1,12 @@
-import React from 'react'
+type IconsPositionInscriptionProps = {
+  logo: string;
+};
 
-const IconsPositionInscription = () => {
+const IconsPositionInscription = ({logo}: IconsPositionInscriptionProps) => {
   return (
-    <div>IconsPositionInscription</div>
+    <div>
+      <img src={logo} alt='Man Logo' /> 
+    </div>
   )
 }
 
