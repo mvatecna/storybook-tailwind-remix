@@ -8,7 +8,9 @@
     "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
     "start": "remix-serve build",
     "typecheck": "tsc",
-    "storybook": "storybook dev -p 6006",
+    "storybook":"concurrently 'pnpm:watch:*'",
+    "watch:storybook": "storybook dev -p 6006",
+    "watch:tailwind": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
     "build-storybook": "storybook build"
   },
   "dependencies": {
