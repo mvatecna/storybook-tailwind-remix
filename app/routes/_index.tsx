@@ -1,4 +1,5 @@
 import type { V2_MetaFunction } from "@remix-run/react";
+import TextInputGen from "../components/TextInputGen";
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: "New Remix App" }];
@@ -6,8 +7,9 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="text-3xl font-bold underline">
-      <h1>Welcome to Remix</h1>
+    <div >
+      <h1 className="text-3xl font-bold underline">Welcome to Remix</h1>
+      <TextInputGen />
       <ul>
         <li>
           <a
