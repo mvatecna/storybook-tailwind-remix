@@ -1,14 +1,16 @@
+import Svg02User from "./icons/02User";
+
 type IconsPositionInscriptionProps = {
-  logo: string;
+  fill: string;
 };
 
-const IconsPositionInscription = ({logo}: IconsPositionInscriptionProps) => {
+const IconsPositionInscription = ({ fill }: IconsPositionInscriptionProps) => {
   return (
-    <div>
-      <img src={logo} alt='Man Logo' /> 
+    <div className="fill-cyan-500 bg-fuchsia-400">
+      <Svg02User fill="#e6e8c7" />
+      <Svg02User fill="#969696" />
     </div>
-  )
-}
-
+  );
+};
 
 export default IconsPositionInscription;
